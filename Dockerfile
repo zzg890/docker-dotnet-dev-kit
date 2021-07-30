@@ -16,6 +16,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends unzip procps
 RUN curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -v latest -l ~/vsdbg 
 
 
-RUN apt install tzdata
+#Install tzdata
+RUN apt install -y tzdata
 RUN rm /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+#Intall Vim
+RUN apt install -y vim 
+
+RUN apt install -y net-tools
