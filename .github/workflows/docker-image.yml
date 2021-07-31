@@ -15,4 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag zzg890/dotnet-devkit
+      run: |
+        docker build . --file Dockerfile --tag zzg890/dotnet-devkit
+        docker push zzg890/dotnet-devkit
+        docker tag zzg890/dotnet-devkit zzg890/dotnet-devkit:5.0
+        docker push zzg890/dotnet-devkit:5.0
