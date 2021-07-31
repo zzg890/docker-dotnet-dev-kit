@@ -7,6 +7,7 @@ RUN npm install -g n
 RUN n lts
 RUN npm config set registry https://registry.npm.taobao.org
 
+ENV DOTNET_ENVIRONMENT Docker
 ENV ASPNETCORE_ENVIRONMENT Docker
 ENV DOTNET_RUNNING_IN_CONTAINER=true
 ENV DOTNET_USE_POLLING_FILE_WATCHER=true
