@@ -7,12 +7,7 @@ name: Docker Publish 3.1
 
 on:
   push:
-    branches: [ '3.1' ]
-    # Publish semver tags as releases.
-    tags: [ '3.1' ]
-  pull_request:
-    branches: [ '3.1' ]
-
+    branches: [ v3.1 ]
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
