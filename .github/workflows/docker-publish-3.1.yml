@@ -31,8 +31,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: 3.1
+      - run: git checkout 3.1
 
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
