@@ -17,9 +17,9 @@ on:
 
 env:
   # Use docker.io for Docker Hub if empty
-  REGISTRY: zzg890
+  REGISTRY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: dotnet-devkit
+  IMAGE_NAME: zzg890/dotnet-devkit
 
 
 jobs:
