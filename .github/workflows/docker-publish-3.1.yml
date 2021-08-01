@@ -7,7 +7,7 @@ name: Docker Publish 3.1
 
 on:
   push:
-    branches: [v3.1]
+    branches: [ master ]
   pull_request:
     branches: 
       - 'v3.1'
