@@ -5,14 +5,7 @@ name: Docker
 # separate terms of service, privacy policy, and support
 # documentation.
 
-on:
-  push:
-    branches: [ master ]
-    # Publish semver tags as releases.
-    tags: [ '5.0', 'latest' ]
-  pull_request:
-    branches: [ master ]
-
+on: [ 'push' ]
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
