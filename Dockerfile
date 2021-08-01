@@ -25,3 +25,4 @@ RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN apt install -y vim 
 
 RUN apt install -y net-tools
+
