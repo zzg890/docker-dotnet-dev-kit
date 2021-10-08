@@ -12,6 +12,7 @@ ENV NETCORE_ENVIRONMENT=Docker
 ENV ASPNETCORE_ENVIRONMENT=Docker
 ENV DOTNET_RUNNING_IN_CONTAINER=true
 ENV DOTNET_USE_POLLING_FILE_WATCHER=true
+RUN echo fs.inotify.max_user_instances=524288 |  tee -a /etc/sysctl.conf
 
 RUN apt-get update && apt-get install -y --no-install-recommends unzip procps
 # Install Visual Studio Remote Debugger
