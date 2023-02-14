@@ -12,7 +12,7 @@ ENV DOTNET_RUNNING_IN_CONTAINER=true
 ENV DOTNET_USE_POLLING_FILE_WATCHER=true
 RUN echo fs.inotify.max_user_instances=524288 |  tee -a /etc/sysctl.conf
 
-RUN apt-get update && apt-get install -y --no-install-recommends unzip procps
+# RUN apt-get update && apt-get install -y --no-install-recommends unzip procps
 # Install Visual Studio Remote Debugger
 RUN curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -v latest -l ~/vsdbg 
 
