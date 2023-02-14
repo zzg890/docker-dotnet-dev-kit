@@ -5,7 +5,7 @@ ENV ASPNETCORE_ENVIRONMENT=Docker
 ENV DOTNET_ENVIRONMENT=Docker
 ENV DOTNET_RUNNING_IN_CONTAINER=true
 ENV DOTNET_USE_POLLING_FILE_WATCHER=true
-ENV DEBIAN_FRONTEND=noninteractive .
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - 
 RUN apt update
