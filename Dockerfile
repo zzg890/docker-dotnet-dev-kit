@@ -1,6 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
-RUN mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/
-RUN mkdir /var/lib/dpkg/info/
+RUN apt-get -o DPkg::Options::=--force-confdef ...
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - 
 RUN apt update
 RUN apt-get install -y nodejs
